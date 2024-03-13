@@ -1,13 +1,12 @@
-from abc import ABC
+from datetime import date
+from interface.serviceable import Serviceable
 
-from car import Car
 
-
-class CapuletEngine(Car, ABC):
-    def __init__(self, last_service_date, current_mileage, last_service_mileage):
-        super().__init__(last_service_date)
+class CapuletEngine(Serviceable):
+    def __init__(self, current_mileage: int, last_service_mileage: int, last_service_date: date):
         self.current_mileage = current_mileage
         self.last_service_mileage = last_service_mileage
+        self.last_service_date = last_service_date
 
-    def engine_should_be_serviced(self):
+    def needs_service(self) -> bool:
         return self.current_mileage - self.last_service_mileage > 30000
