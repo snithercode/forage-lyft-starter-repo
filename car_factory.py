@@ -1,5 +1,16 @@
 from datetime import date
 from car import Car
+from model.calliope import Calliope
+from model.glissade import Glissade
+from model.palindrome import Palindrome
+from model.rorschach import Rorschach
+from model.thovex import Thovex
+from engine.capulet_engine import CapuletEngine
+from engine.willoughby_engine import WilloughbyEngine
+from engine.sternman_engine import SternmanEngine
+from battery.spindler_battery import SpindlerBattery
+from battery.nubbin_battery import NubbinBattery
+
 
 class CarFactory:
     def create_calliope(current_date: date, last_service_date: date, current_mileage: int, last_service_mileage: int) -> Car:
@@ -22,7 +33,7 @@ class CarFactory:
         battery = NubbinBattery(last_service_date)
         return Rorschach(engine, battery)
 
-    def create_thovex(current_date: date, last_service_date: date, current_mileage: int) -> Car:
+    def create_thovex(current_date: date, last_service_date: date, current_mileage: int, last_service_mileage: int) -> Car:
         engine = CapuletEngine(current_mileage, last_service_mileage)
         battery = NubbinBattery(last_service_date)
         return Thovex(engine, battery)
