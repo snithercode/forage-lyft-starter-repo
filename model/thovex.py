@@ -1,12 +1,13 @@
 from datetime import datetime
-
 from engine.capulet_engine import CapuletEngine
+from battery.nubbin_battery import NubbinBattery
+from interface.serviceable import Serviceable
 
 
-class Thovex(CapuletEngine):
-    def needs_service(self):
-        service_threshold_date = self.last_service_date.replace(year=self.last_service_date.year + 4)
-        if service_threshold_date < datetime.today().date() or self.engine_should_be_serviced():
-            return True
-        else:
-            return False
+class Thovex(Serviceable):
+    def __init__(self, engine, battery):
+        self.engine = engine
+        self.battery = battery
+
+    def needs_service(self) -> bool:
+        return self.engine.needs_service() or self.battery.needs_service()
