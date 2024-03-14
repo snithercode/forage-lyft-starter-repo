@@ -9,4 +9,4 @@ class SpindlerBattery(Serviceable):
 
     def needs_service(self) -> bool:
         years_since_last_service = self.current_date.year - self.last_service_date.year
-        return years_since_last_service >= 2
+        return years_since_last_service >= 3
