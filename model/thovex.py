@@ -1,6 +1,6 @@
 from datetime import datetime
-from engine.capulet_engine import CapuletEngine
-from battery.nubbin_battery import NubbinBattery
+from component.engine.capulet_engine import CapuletEngine
+from component.battery.nubbin_battery import NubbinBattery
 from interface.serviceable import Serviceable
 
 

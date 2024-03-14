@@ -1,6 +1,6 @@
 from datetime import datetime
-from engine.willoughby_engine import WilloughbyEngine
-from battery.spindler_battery import SpindlerBattery
+from component.engine.willoughby_engine import WilloughbyEngine
+from component.battery.spindler_battery import SpindlerBattery
 from interface.serviceable import Serviceable
 
 

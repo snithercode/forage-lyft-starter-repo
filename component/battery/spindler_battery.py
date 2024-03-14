@@ -1,4 +1,4 @@
-from datetime import date
+from datetime import datetime
 from interface.serviceable import Serviceable
 
 class SpindlerBattery(Serviceable):

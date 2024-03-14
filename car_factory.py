@@ -5,11 +5,11 @@ from model.glissade import Glissade
 from model.palindrome import Palindrome
 from model.rorschach import Rorschach
 from model.thovex import Thovex
-from engine.capulet_engine import CapuletEngine
-from engine.willoughby_engine import WilloughbyEngine
-from engine.sternman_engine import SternmanEngine
-from battery.spindler_battery import SpindlerBattery
-from battery.nubbin_battery import NubbinBattery
+from component.engine.capulet_engine import CapuletEngine
+from component.engine.willoughby_engine import WilloughbyEngine
+from component.engine.sternman_engine import SternmanEngine
+from component.battery.spindler_battery import SpindlerBattery
+from component.battery.nubbin_battery import NubbinBattery
 
 
 class CarFactory:

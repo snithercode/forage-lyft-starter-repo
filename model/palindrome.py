@@ -1,6 +1,6 @@
 from datetime import datetime
-from engine.sternman_engine import SternmanEngine
-from battery.spindler_battery import SpindlerBattery
+from component.engine.sternman_engine import SternmanEngine
+from component.battery.spindler_battery import SpindlerBattery
 from interface.serviceable import Serviceable
 
 

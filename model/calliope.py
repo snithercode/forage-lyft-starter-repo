@@ -1,6 +1,6 @@
 from datetime import datetime
-from engine.capulet_engine import CapuletEngine
-from battery.spindler_battery import SpindlerBattery
+from component.engine.capulet_engine import CapuletEngine
+from component.battery.spindler_battery import SpindlerBattery
 from interface.serviceable import Serviceable
 
 

@@ -1,10 +1,8 @@
-from abc import ABC
-
-from car import Car
-
+from datetime import date
+from interface.serviceable import Serviceable
 
 class WilloughbyEngine(Serviceable):
-    def __init__(self, last_service_date, current_mileage: int, last_service_mileage: int, last_service_date: int):
+    def __init__(self, current_mileage: int, last_service_mileage: int, last_service_date: date):
         self.current_mileage = current_mileage
         self.last_service_mileage = last_service_mileage
         self.last_service_date = last_service_date

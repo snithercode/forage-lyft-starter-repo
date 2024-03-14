@@ -1,6 +1,6 @@
 from datetime import datetime
-from engine.willoughby_engine import WilloughbyEngine
-from battery.nubbin_battery import NubbinBattery
+from component.engine.willoughby_engine import WilloughbyEngine
+from component.battery.nubbin_battery import NubbinBattery
 from interface.serviceable import Serviceable
 
 
