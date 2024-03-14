@@ -2,7 +2,7 @@ from typing import List
 from interface.serviceable import Serviceable
 
 class CarriganTires(Serviceable):
-    def __init__(self, tire_wear: List[int]):
+    def __init__(self, tire_wear: List[float]):
         self.tire_wear = tire_wear
     
     def needs_service(self) -> bool:
