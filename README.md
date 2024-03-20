@@ -12,3 +12,5 @@ This component is part of the Lyft Rentals back-end system, designed to assess w
 
 - **Test-Driven Development (TDD)**: This project adopts TDD practices, with unit tests that cover new functionalities and critical system
   components. These tests ensure that the system behaves as expected under various scenarios and provide a safety net for future code changes.
+  
+![image](https://github.com/snithercode/forage-lyft-starter-repo/assets/18250888/8dae0d75-ae4a-4781-afef-d437fa555529)
